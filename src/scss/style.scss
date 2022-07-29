@@ -1,0 +1,49 @@
+@import './base/null.scss';
+//! <Подключение шрифтов>
+@import url('https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap');
+@import './base/fonts.scss';
+//! </Подключение шрифтов>
+
+//! <Иконочные шрифты>
+@import './fonts/icons.scss';
+//! </Иконочные шрифты>
+
+//! <Переменные>
+@import './base/variables.scss';
+//! </Переменные>
+
+//! <Обнуление, сетка, параметры>
+body {
+    color: #000;
+    font-style: 14px;
+    font-family: $fontFamily;
+    // &.lock{
+    //     overflow: hidden;
+    // }
+}
+//! </Обнуление, сетка, параметры>
+
+//! <Основная сетка>
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    @media (max-width: $md1) {
+        max-width: 750px;
+    }
+    @media (max-width: $md2) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+//! </Основная сетка>
+.page{
+    flex: 1 1 auto;
+}
+@import './blocks/header.scss';
