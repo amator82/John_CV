@@ -14,8 +14,8 @@
 
 //! <Обнуление, сетка, параметры>
 body {
-    color: #000;
-    font-style: 14px;
+    color: $dark;
+    font-size: 14px;
     font-family: $fontFamily;
     // &.lock{
     //     overflow: hidden;
@@ -44,6 +44,14 @@ body {
 }
 //! </Основная сетка>
 .page{
+    padding: 90px 0 0 0;
     flex: 1 1 auto;
+    @media (max-width: $md3){
+        padding: 30px 0 0 0;
+    }
 }
+
+
+@import './base/ui.scss';
 @import './blocks/header.scss';
+@import './blocks/hello.scss';
