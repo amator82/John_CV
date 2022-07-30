@@ -32,8 +32,19 @@
 }
 .title-posts {
     font-size: 22px;
-    @media (max-width: $md3){
+    @media (max-width: $md3) {
         font-size: 18px;
         text-align: center;
+    }
+}
+._ibg {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
     }
 }
