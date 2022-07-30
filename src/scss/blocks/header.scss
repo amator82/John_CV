@@ -58,6 +58,9 @@
         line-height: calc(29 / 20);
         color: #000;
         transition: color 0.3s ease 0s;
+        &._active{
+            color: $primary;
+        }
         @media (min-width: $md2) {
             &:hover {
                 color: $primary;
@@ -98,7 +101,7 @@
         span {
             top: calc(50% - 1px);
         }
-        .menu-open & {
+        &._active {
             span {
                 width: 0;
             }

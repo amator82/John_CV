@@ -2,11 +2,13 @@
     @@include('html/head.html', { 'title': 'Home page' })
     <body>
         <div class="wrapper">
-            @@include('html/header.html',{})
+            @@include('html/header.html',{
+                "link": "0"
+            })
             <main class="page">
-                @@include('html/hello.html',{})
-                @@include('html/recent-posts.html',{})
-                @@include('html/featured-works.html',{})
+                @@include('html/home/hello.html',{})
+                @@include('html/home/recent-posts.html',{})
+                @@include('html/home/featured-works.html',{})
             </main> 
             @@include('html/footer.html',{})
         </div>

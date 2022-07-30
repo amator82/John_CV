@@ -54,8 +54,13 @@ body {
 //! <Подключение блоков>
 @import './base/ui.scss';
 @import './blocks/header.scss';
-@import './blocks/hello.scss';
-@import './blocks/recent-posts.scss';
-@import './blocks/featured-works.scss';
 @import './blocks/footer.scss';
+
+@import './blocks/home/hello.scss';
+@import './blocks/home/recent-posts.scss';
+@import './blocks/home/featured-works.scss';
+
+@import './blocks/blog/blog.scss';
+
+@import './blocks/work/work.scss';
 //! </Подключение блоков>
