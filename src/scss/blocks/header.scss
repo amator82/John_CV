@@ -32,7 +32,7 @@
             overflow: auto;
             padding: 70px 10px 30px 10px;
             background-color: rgba(255, 255, 255, 0.95);
-            .menu-open & {
+            &._active {
                 transform: translate(0px, -0%);
             }
         }

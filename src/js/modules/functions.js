@@ -15,21 +15,14 @@ export function isWebp() {
 }
 //!<Menu Burger>
 export function menuInit() {
-    if (document.querySelector('.icon-menu')) {
-        document.addEventListener('click', function (e) {
-            if (e.target.closest('.icon-menu')) {
-                // bodyLockToggle();
-                document.documentElement.classList.toggle('menu-open')
-            }
+    const iconMenu = document.querySelector('.menu__icon')
+    const menuBody = document.querySelector('.menu__body')
+    if (iconMenu) {
+        iconMenu.addEventListener('click', function (e) {
+            document.body.classList.toggle('_lock')
+            iconMenu.classList.toggle('_active')
+            menuBody.classList.toggle('_active')
         })
     }
-}
-export function menuOpen() {
-    // bodyLock();
-    document.documentElement.classList.add('menu-open')
-}
-export function menuClose() {
-    // bodyUnlock();
-    document.documentElement.classList.remove('menu-open')
 }
 //!</Menu Burger>
