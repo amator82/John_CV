@@ -1,0 +1,81 @@
+.article {
+    max-width: 700px;
+    padding: 0 10px 30px;
+    margin: 0 auto;
+    &__title {
+        max-width: 506px;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: calc(50 / 34 * 100%);
+        margin: 0 0 30px 0;
+        @media (max-width: $md3) {
+            font-size: 30px;
+            margin: 0 0 25px 0;
+        }
+    }
+    &__info {
+        margin: 0 0 20px 0;
+        display: flex;
+    }
+    &__year {
+        color: #fff;
+        background-color: #ff7c7c;
+        border-radius: 16px;
+        height: 25px;
+        padding: 0 10px;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 18px;
+    }
+    &__category {
+        align-self: center;
+        font-size: 20px;
+        line-height: calc(25 / 20 * 100%);
+        margin: 0 0 0 25px;
+        @media (max-width: $md3) {
+            font-size: 18px;
+        }
+    }
+    &__preview {
+        p {
+            @extend .text;
+            margin: 0 0 35px 0;
+            @media (max-width: $md3) {
+                margin: 0 0 20px 0;
+            }
+        }
+        img {
+            max-width: 100%;
+            margin: 0 0 55px 0;
+            @media (max-width: $md3) {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+    &__text {
+    }
+}
+.text-article {
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        margin: 0 0 20px 0;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 0 0 20px 0;
+    }
+    &__info {
+        p {
+            margin: 0 0 30px 0;
+            @extend .text;
+        }
+        img {
+            &:not(:last-child) {
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+}
