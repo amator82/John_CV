@@ -1,2 +1,2 @@
-# 06_John_CV
- GULP
+# John_CV
+ Some simple website by using GULP
